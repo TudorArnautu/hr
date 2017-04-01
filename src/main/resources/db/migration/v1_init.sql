@@ -8,8 +8,6 @@
    )
 
 
-
-
 INSERT INTO DEPARTAMENTE(id, nume) VALUES (1, 'IT');
 INSERT INTO DEPARTAMENTE(id, nume) VALUES (2, 'Logistica');
 INSERT INTO DEPARTAMENTE(id, nume) VALUES (3, 'HR');
