@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface CursantiRepository extends JpaRepository<Cursanti, Integer> {
-    List<Cursanti> findAll();
+   Cursanti findById(int id);
 }

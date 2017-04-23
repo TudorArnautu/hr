@@ -16,8 +16,8 @@ public class Cursuri {
     @Column(name = "ID", nullable = false)
     private int id;
 
-    @Column(name = "NUME", nullable = false)
-    private String nume;
+    @Column(name = "NUME_CURS", nullable = false)
+    private String numeCurs;
 
     protected Cursuri() {
 
@@ -27,15 +27,15 @@ public class Cursuri {
         return id;
     }
 
-    public String getNume() {
-        return nume;
+    public String getNumeCurs() {
+        return numeCurs;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setNume(String nume) {
-        this.nume = nume;
+    public void setNumeCurs(String nume) {
+        this.numeCurs = nume;
     }
 }

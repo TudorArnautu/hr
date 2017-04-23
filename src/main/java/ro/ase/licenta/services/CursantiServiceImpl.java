@@ -16,7 +16,7 @@ public class CursantiServiceImpl implements CursantiService{
     CursantiRepository cursantiRepository;
 
     @Override
-    public List<Cursanti> findAll() {
-        return cursantiRepository.findAll();
+    public Cursanti getCursanti(int id) {
+        return cursantiRepository.findById(id);
     }
 }

@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface ExperientaRepository extends JpaRepository<Experienta, Integer> {
-    List<Experienta> findAll();
+    Experienta findById(int id);
 }

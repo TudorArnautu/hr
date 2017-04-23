@@ -13,6 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Autenticate {
     @RequestMapping("/autenticate/login")
     public String login() {
-        return "authenticate/login";
+        return "autenticate/login";
     }
 }

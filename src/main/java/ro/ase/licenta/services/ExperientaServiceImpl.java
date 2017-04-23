@@ -15,7 +15,7 @@ public class ExperientaServiceImpl implements ExperientaService{
     @Autowired
     ExperientaRepository experientaRepository;
     @Override
-    public List<Experienta> findALl() {
-        return experientaRepository.findAll();
+    public Experienta getExperienta(int id) {
+        return experientaRepository.findById(id);
     }
 }

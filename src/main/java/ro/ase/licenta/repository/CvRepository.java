@@ -1,9 +1,13 @@
 package ro.ase.licenta.repository;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import ro.ase.licenta.domain.Cv;
+import ro.ase.licenta.domain.Educatie;
 
+import java.awt.print.Pageable;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -11,5 +15,7 @@ import java.util.List;
  */
 @Repository
 public interface CvRepository extends JpaRepository<Cv, Integer> {
-    List<Cv> findAll();
+
+    Cv findById(int id);
+
 }

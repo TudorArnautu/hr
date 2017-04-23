@@ -2,11 +2,13 @@ package ro.ase.licenta.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import ro.ase.licenta.domain.*;
 import ro.ase.licenta.services.*;
 
+import java.text.DateFormat;
 import java.util.List;
 
 /**
@@ -56,11 +58,6 @@ public class Employee {
         return "employee/profile";
     }
 
-    @RequestMapping("/employee/cv")
-    public String cv() {
-        return "employee/cv";
-    }
-
     @RequestMapping("/employee/concedii")
     public String concedii() {
         return "employee/concedii";
@@ -76,33 +73,40 @@ public class Employee {
         return "employee/consultatiiMedicale";
     }
 
-    @RequestMapping("/employee/posturi")
-    public String posturi() {
-        return "employee/posturi";
-    }
-
     @RequestMapping("/empoyee/list")
     @ResponseBody
     public List<Angajati> list() {
         return angajatiService.findAll();
     }
 
-    @RequestMapping("/employee/cvlist")
-    @ResponseBody
-    public List<Cv> listCv() {
-        return cvService.findAll();
+    @RequestMapping("/employee/posturi")
+    public String posturi() {
+        return "employee/posturi";
     }
+
+
+    @RequestMapping(value="/employee/{employeeId}/cv", method=RequestMethod.GET)
+    public String cv(@PathVariable int employeeId, Model model) {
+        Cv cv = cvService.getCv(employeeId);
+        model.addAttribute("cv", cv);
+
+        return "employee/cv";
+    }
+
+    @RequestMapping(value="/employee/{employeeId}/cursanti", method=RequestMethod.GET)
+    public String cursanti(@PathVariable int employeeId, Model model) {
+        Cursanti cursanti = cursantiService.getCursanti(employeeId);
+        model.addAttribute("cursanti", cursanti);
+
+        return "employee/cursanti";
+    }
+
+
 
     @RequestMapping("/employee/consultatiimedicalelist")
     @ResponseBody
     public List<ConsultatiiMedicale> listConsultatii() {
         return consultatiiMedicaleService.findAll();
-    }
-
-    @RequestMapping("/employee/cursantiList")
-    @ResponseBody
-    public List<Cursanti> listCursanti() {
-        return cursantiService.findAll();
     }
 
     @RequestMapping("/employee/cursuriList")
@@ -115,18 +119,6 @@ public class Employee {
     @ResponseBody
     public List<Departamente> listDepartamente() {
         return departamenteService.findAll();
-    }
-
-    @RequestMapping("/employee/educatieList")
-    @ResponseBody
-    public List<Educatie> listEducatie() {
-        return educatieService.findAll();
-    }
-
-    @RequestMapping("/employee/experientaList")
-    @ResponseBody
-    public List<Experienta> listExperienta() {
-        return experientaService.findALl();
     }
 
     @RequestMapping("/employee/functiiList")

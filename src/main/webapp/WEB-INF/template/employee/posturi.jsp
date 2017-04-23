@@ -2,5 +2,5 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-    Employee posturi
+    PosturiDisponibile posturi
 </t:layout>

@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface EducatieRepository extends JpaRepository<Educatie, Integer> {
-    List<Educatie> findAll();
+    Educatie findById(int id);
 }

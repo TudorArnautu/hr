@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import ro.ase.licenta.domain.Educatie;
 import ro.ase.licenta.repository.EducatieRepository;
 
-import java.util.List;
 
 /**
  * Created by arnau on 28.03.2017.
@@ -14,8 +13,11 @@ import java.util.List;
 public class EducatieServiceImpl implements EducatieService{
     @Autowired
     EducatieRepository educatieRepository;
+
     @Override
-    public List<Educatie> findAll() {
-        return educatieRepository.findAll();
+    public Educatie getEducatie(int id) {
+        return educatieRepository.findById(id);
     }
+
+
 }

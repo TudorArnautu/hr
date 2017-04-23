@@ -25,8 +25,8 @@ public class Angajati implements Serializable{
     @Column(name = "PRENUME", nullable = false)
     private String prenume;
 
-    @Column(name = "ID_ANGAJAT", nullable = false)
-    private int id_angajat;
+    @Column(name = "ID_FUNCTIE", nullable = false)
+    private int id_functie;
 
     protected Angajati() {
 
@@ -44,8 +44,8 @@ public class Angajati implements Serializable{
         this.prenume = prenume;
     }
 
-    public void setId_angajat(int id_angajat) {
-        this.id_angajat = id_angajat;
+    public void setId_functie(int id_angajat) {
+        this.id_functie = id_angajat;
     }
 
     public int getId() {
@@ -60,7 +60,7 @@ public class Angajati implements Serializable{
         return prenume;
     }
 
-    public int getId_angajat() {
-        return id_angajat;
+    public int getId_functie() {
+        return id_functie;
     }
 }

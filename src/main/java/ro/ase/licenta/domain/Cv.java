@@ -30,7 +30,7 @@ public class Cv {
     private String nationalitate;
 
     @Column(name = "DATA_NASTERE", nullable = false)
-    private Date dataNastere;
+    private String dataNastere;
 
     @Column(name = "SEX", nullable = false)
     private String sex;
@@ -40,6 +40,20 @@ public class Cv {
 
     @Column(name = "TARA", nullable = false)
     private String tara;
+
+    @Column(name = "NUME", nullable = false)
+    private String nume;
+
+    @Column(name = "PRENUME", nullable = false)
+    private String prenume;
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
 
     protected Cv() {
 
@@ -65,7 +79,7 @@ public class Cv {
         return nationalitate;
     }
 
-    public Date getDataNastere() {
+    public String getDataNastere() {
         return dataNastere;
     }
 
@@ -101,7 +115,7 @@ public class Cv {
         this.nationalitate = nationalitate;
     }
 
-    public void setDataNastere(Date dataNastere) {
+    public void setDataNastere(String dataNastere) {
         this.dataNastere = dataNastere;
     }
 

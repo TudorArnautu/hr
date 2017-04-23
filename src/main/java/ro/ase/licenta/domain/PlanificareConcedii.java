@@ -23,8 +23,8 @@ public class PlanificareConcedii {
     @Column(name = "DATA", nullable = false)
     private Date data;
 
-    @Column(name = "ID_ANGAJATI", nullable = false)
-    private int idAngajati;
+    @Column(name = "ID_ANGAJAT", nullable = false)
+    private int idAngajat;
 
     protected PlanificareConcedii() {
 
@@ -42,8 +42,8 @@ public class PlanificareConcedii {
         return data;
     }
 
-    public int getIdAngajati() {
-        return idAngajati;
+    public int getIdAngajat() {
+        return idAngajat;
     }
 
     public void setId(int id) {
@@ -58,7 +58,7 @@ public class PlanificareConcedii {
         this.data = data;
     }
 
-    public void setIdAngajati(int idAngajati) {
-        this.idAngajati = idAngajati;
+    public void setIdAngajat(int idAngajat) {
+        this.idAngajat = idAngajat;
     }
 }
