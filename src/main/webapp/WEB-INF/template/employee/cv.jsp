@@ -15,6 +15,8 @@
         <th>Sex</th>
         <th>Oras</th>
         <th>Tara</th>
+        <th>Educatie</th>
+        <th>Experienta</th>
     </tr>
         <tr>
             <th>${cv.getId()}</th>
@@ -28,6 +30,8 @@
             <th>${cv.getSex()}</th>
             <th>${cv.getOras()}</th>
             <th>${cv.getTara()}</th>
+            <th>${educatie.getDescriere()}</th>
+            <th>${experienta.getDescriere()}</th>
 
         </tr>
     </table>

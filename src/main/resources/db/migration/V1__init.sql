@@ -127,3 +127,14 @@ INSERT INTO CV(adresa,telefon, email,nationalitate, data_nastere, sex, oras, tar
 INSERT INTO CURSANTI(numar_cursanti, nivel_cunostinte) VALUES (20, 'medii');
 INSERT INTO CURSANTI(numar_cursanti, nivel_cunostinte) VALUES (15, 'incepatori');
 INSERT INTO CURSANTI(numar_cursanti, nivel_cunostinte) VALUES (10, 'avansati');
+
+INSERT INTO EDUCATIE(descriere, id_cv, an_absolvire, facultate, ani_facultate) VALUES ('descriere 1', 1,2007, 'CSIE', 3);
+INSERT INTO EDUCATIE(descriere, id_cv, an_absolvire, facultate, ani_facultate) VALUES ('descriere 2', 2,2007, 'REI', 3);
+INSERT INTO EDUCATIE(descriere, id_cv, an_absolvire, facultate, ani_facultate) VALUES ('descriere 3', 3,2007, 'CSIE', 3);
+
+INSERT INTO EXPERIENTA(descriere, id_cv, experienta_anterioara, angajator, pozitii_ocupate, ani_experienta, limbi_vorbite)
+VALUES ('descriere 1', 1, 'experienta 1', 'IMB', 'programator', 2, 'engleza, franceza');
+INSERT INTO EXPERIENTA(descriere, id_cv, experienta_anterioara, angajator, pozitii_ocupate, ani_experienta, limbi_vorbite)
+VALUES ('descriere 2', 2, 'experienta 2', 'Crystal System', 'programator', 2, 'engleza, franceza');
+INSERT INTO EXPERIENTA(descriere, id_cv, experienta_anterioara, angajator, pozitii_ocupate, ani_experienta, limbi_vorbite)
+VALUES ('descriere 3', 3, 'experienta 3', 'Crystal System', 'programator', 5, 'engleza, franceza');

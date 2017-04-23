@@ -88,19 +88,22 @@ public class Employee {
     @RequestMapping(value="/employee/{employeeId}/cv", method=RequestMethod.GET)
     public String cv(@PathVariable int employeeId, Model model) {
         Cv cv = cvService.getCv(employeeId);
+        Educatie educatie = educatieService.getEducatie(employeeId);
+        Experienta experienta = experientaService.getExperienta(employeeId);
         model.addAttribute("cv", cv);
+        model.addAttribute("educatie", educatie);
+        model.addAttribute("experienta", experienta);
 
         return "employee/cv";
     }
 
-    @RequestMapping(value="/employee/{employeeId}/cursanti", method=RequestMethod.GET)
-    public String cursanti(@PathVariable int employeeId, Model model) {
-        Cursanti cursanti = cursantiService.getCursanti(employeeId);
+    @RequestMapping(value="/employee/{cursantiId}/cursanti", method=RequestMethod.GET)
+    public String cursanti(@PathVariable int cursantiId, Model model) {
+        Cursanti cursanti = cursantiService.getCursanti(cursantiId);
         model.addAttribute("cursanti", cursanti);
 
         return "employee/cursanti";
     }
-
 
 
     @RequestMapping("/employee/consultatiimedicalelist")

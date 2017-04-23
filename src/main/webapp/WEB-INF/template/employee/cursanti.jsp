@@ -11,9 +11,9 @@
 
         </tr>
         <tr>
-            <th>${cv.getId()}</th>
-            <th>${cv.getNumarCursanti()}</th>
-            <th>${cv.getNivelCunostinte()}</th>
+            <th>${cursanti.getId()}</th>
+            <th>${cursanti.getNumarCursanti()}</th>
+            <th>${cursanti.getNivelCunostinte()}</th>
         </tr>
     </table>
 
