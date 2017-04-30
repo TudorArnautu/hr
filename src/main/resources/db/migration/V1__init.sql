@@ -138,3 +138,50 @@ INSERT INTO EXPERIENTA(descriere, id_cv, experienta_anterioara, angajator, pozit
 VALUES ('descriere 2', 2, 'experienta 2', 'Crystal System', 'programator', 2, 'engleza, franceza');
 INSERT INTO EXPERIENTA(descriere, id_cv, experienta_anterioara, angajator, pozitii_ocupate, ani_experienta, limbi_vorbite)
 VALUES ('descriere 3', 3, 'experienta 3', 'Crystal System', 'programator', 5, 'engleza, franceza');
+
+
+INSERT  INTO  PROGRAMARE_CURSURI(data, id_cursanti) VALUES ('2017.04.22', 1);
+INSERT  INTO  PROGRAMARE_CURSURI(data, id_cursanti) VALUES ('2017.03.22', 2);
+INSERT  INTO  PROGRAMARE_CURSURI(data, id_cursanti) VALUES ('2017.04.20', 3);
+
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Web developer java', 3200, 1);
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Web developer java', 3300, 1);
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Web developer php', 3000, 1);
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Web developer javascript', 3200, 1);
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Tester', 2800, 1);
+INSERT INTO FUNCTII(nume_functie, salariu, id_departament) VALUES ('Hr recruter', 2400, 3);
+
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Ionescu','Andrei',1);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Popescu', 'Ana',1);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Marinescu','Mircea',2);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Vasiliu','Mihai',2);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Avram', 'Corina',2);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Alexandru', 'George',3);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Simion','Iulia',3);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Carp', 'Iulian',3);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Nitescu','Ovidiu',4);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Toma','Alin',4);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Durbaca', 'Mihaela',5);
+INSERT  INTO ANGAJATI(nume, prenume, id_functie) VALUES ('Oslobanu', 'Razvan',6);
+
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.10',1);
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.11',2);
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.12',3);
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.13',4);
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.14',5);
+INSERT INTO CONSULTATII_MEDICALE(data, id_angajat) VALUES ('2017.04.15',6);
+
+INSERT INTO PLANIFICARE_CONCEDII(tip_concediu, data, id_angajat) VALUES ('Odihna', '2017.05.10', 4);
+INSERT INTO PLANIFICARE_CONCEDII(tip_concediu, data, id_angajat) VALUES ('Medical', '2017.04.5', 5);
+INSERT INTO PLANIFICARE_CONCEDII(tip_concediu, data, id_angajat) VALUES ('Fara plata','2017.06.3',8);
+INSERT INTO PLANIFICARE_CONCEDII(tip_concediu, data, id_angajat) VALUES ('Odihna', '2017.06.10',7);
+
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (1,'Ionescu_Andrei', '1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (2,'Popescu_Ana','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (3,'Marinescu_Mircea','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (4,'Vasiliu_Mihai','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (5,'Avram_Corina','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (6,'Alexandru_George','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (7,'Simion_Iulia','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (8,'Carp_Iulian','1234');
+INSERT INTO LOGIN(id_angajat, nume_utilizator, parola) VALUES (9,'Nitescu_Ovidiu','1234');
