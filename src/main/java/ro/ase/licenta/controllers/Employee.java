@@ -2,13 +2,14 @@ package ro.ase.licenta.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import ro.ase.licenta.domain.*;
 import ro.ase.licenta.services.*;
 
-import java.text.DateFormat;
 import java.util.List;
 
 /**
@@ -52,6 +53,12 @@ public class Employee {
 
     @Autowired
     ProgramareCursuriService programareCursuriService;
+
+
+    @RequestMapping("/")
+    public String dashboard() {
+        return "employee/profile";
+    }
 
     @RequestMapping("/employee/profile")
     public String profile() {

@@ -2,6 +2,18 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
+
+    <h1 class="page-header">Concedii</h1>
+
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-dashboard"></i>  <a href="/">Dashboard</a>
+        </li>
+        <li class="active">
+            <i class="fa fa-file"></i> Concedii
+        </li>
+    </ol>
+
     <table class="responsive table">
         <tr>
             <th>Id</th>
