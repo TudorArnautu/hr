@@ -16,7 +16,7 @@ public class ConsultatiiMedicaleServiceImpl implements ConsultatiiMedicaleServic
     ConsulatiiMedicaleRepository consulatiiMedicaleRepository;
 
     @Override
-    public List<ConsultatiiMedicale> findAll() {
-        return consulatiiMedicaleRepository.findAll();
+    public ConsultatiiMedicale getConsultatiiMedicale(int id) {
+        return consulatiiMedicaleRepository.findById(id);
     }
 }

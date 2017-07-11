@@ -2,5 +2,18 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-    Employee profile
+    <table class="responsive table">
+        <tr>
+            <th>Id</th>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>ID Functie</th>
+        </tr>
+        <tr>
+            <th>${profile.getId()}</th>
+            <th>${profile.getNume()}</th>
+            <th>${profile.getPrenume()}</th>
+            <th>${profile.getIdFunctie()}</th>
+        </tr>
+    </table>
 </t:layout>

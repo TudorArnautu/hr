@@ -14,8 +14,9 @@ import java.util.List;
 public class PlanificareConcediiImpl implements PlanificareConcediiService{
     @Autowired
     PlanificareConcediiRepository planificareConcediiRepository;
+
     @Override
-    public List<PlanificareConcedii> findAll() {
-        return planificareConcediiRepository.findAll();
+    public PlanificareConcedii getPlanificareConcedii(int id) {
+        return planificareConcediiRepository.findById(id);
     }
 }

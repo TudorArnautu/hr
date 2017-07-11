@@ -2,5 +2,16 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:layout>
-    Employee consultatiiMedicale
+    <table class="responsive table">
+        <tr>
+            <th>Id</th>
+            <th>Data</th>
+            <th>Id Angajat</th>
+        </tr>
+        <tr>
+            <th>${consultatii.getId()}</th>
+            <th>${consultatii.getData()}</th>
+            <th>${consultatii.getIdAngajat()}</th>
+        </tr>
+    </table>
 </t:layout>

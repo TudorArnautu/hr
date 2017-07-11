@@ -16,7 +16,7 @@ public class CursuriServiceImpl implements CursuriService {
     CursuriRepository cursuriRepository;
 
     @Override
-    public List<Cursuri> findAll() {
-        return cursuriRepository.findAll();
+    public Cursuri getCursuri(int id) {
+        return cursuriRepository.findById(id);
     }
 }

@@ -26,7 +26,7 @@ public class Angajati implements Serializable{
     private String prenume;
 
     @Column(name = "ID_FUNCTIE", nullable = false)
-    private int id_functie;
+    private int idFunctie;
 
     protected Angajati() {
 
@@ -45,7 +45,7 @@ public class Angajati implements Serializable{
     }
 
     public void setId_functie(int id_angajat) {
-        this.id_functie = id_angajat;
+        this.idFunctie = id_angajat;
     }
 
     public int getId() {
@@ -60,7 +60,7 @@ public class Angajati implements Serializable{
         return prenume;
     }
 
-    public int getId_functie() {
-        return id_functie;
+    public int getIdFunctie() {
+        return idFunctie;
     }
 }

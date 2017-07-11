@@ -8,5 +8,6 @@ import java.util.List;
  * Created by arnau on 27.03.2017.
  */
 public interface PlanificareConcediiService {
-    List<PlanificareConcedii> findAll();
+    //List<PlanificareConcedii> findAll();
+    PlanificareConcedii getPlanificareConcedii(int id);
 }

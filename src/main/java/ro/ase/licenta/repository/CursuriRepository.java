@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface CursuriRepository extends JpaRepository<Cursuri, Integer> {
-    List<Cursuri> findAll();
+    Cursuri findById(int id);
 }

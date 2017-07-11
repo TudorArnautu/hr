@@ -21,7 +21,7 @@ public class PlanificareConcedii {
     private String tipConcediu;
 
     @Column(name = "DATA", nullable = false)
-    private Date data;
+    private String data;
 
     @Column(name = "ID_ANGAJAT", nullable = false)
     private int idAngajat;
@@ -38,7 +38,7 @@ public class PlanificareConcedii {
         return tipConcediu;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
@@ -54,7 +54,7 @@ public class PlanificareConcedii {
         this.tipConcediu = tipConcediu;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 

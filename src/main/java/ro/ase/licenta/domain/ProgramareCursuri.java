@@ -18,7 +18,7 @@ public class ProgramareCursuri {
     private int id;
 
     @Column(name = "DATA", nullable = false)
-    private Date data;
+    private String data;
 
     @Column(name = "ID_CURSANTI", nullable = false)
     private int idCursanti;
@@ -31,7 +31,7 @@ public class ProgramareCursuri {
         return id;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
@@ -43,7 +43,7 @@ public class ProgramareCursuri {
         this.id = id;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 

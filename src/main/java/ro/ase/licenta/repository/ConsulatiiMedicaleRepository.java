@@ -12,5 +12,5 @@ import java.util.List;
  */
 @Repository
 public interface ConsulatiiMedicaleRepository extends JpaRepository<ConsultatiiMedicale, Integer> {
- List<ConsultatiiMedicale> findAll();
+ ConsultatiiMedicale findById(int id);
 }

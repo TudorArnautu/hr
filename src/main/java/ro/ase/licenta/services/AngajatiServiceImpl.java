@@ -17,7 +17,7 @@ public class AngajatiServiceImpl implements AngajatiService {
     AngajatiRepository angajatiRepository;
 
     @Override
-    public List<Angajati> findAll() {
-        return angajatiRepository.findAll();
+    public Angajati getAngajati(int id) {
+        return angajatiRepository.findById(id);
     }
 }
