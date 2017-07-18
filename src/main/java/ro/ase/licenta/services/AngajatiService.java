@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface AngajatiService {
     Angajati getAngajati(int id);
+    List<Angajati> findAll();
 }

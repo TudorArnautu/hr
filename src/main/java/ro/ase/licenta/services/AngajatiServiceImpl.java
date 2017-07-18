@@ -20,4 +20,9 @@ public class AngajatiServiceImpl implements AngajatiService {
     public Angajati getAngajati(int id) {
         return angajatiRepository.findById(id);
     }
+
+    @Override
+    public List<Angajati> findAll() {
+        return angajatiRepository.findAll();
+    }
 }

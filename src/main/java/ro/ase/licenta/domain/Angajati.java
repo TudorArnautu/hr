@@ -8,7 +8,6 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "ANGAJATI")
-@Access(value = AccessType.FIELD)
 public class Angajati implements Serializable{
 
     private static final int serialVersionUID = 1;
@@ -27,10 +26,6 @@ public class Angajati implements Serializable{
 
     @Column(name = "ID_FUNCTIE", nullable = false)
     private int idFunctie;
-
-    protected Angajati() {
-
-    }
 
     public void setId(int id) {
         this.id = id;

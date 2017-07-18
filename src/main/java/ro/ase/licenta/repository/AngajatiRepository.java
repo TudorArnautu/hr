@@ -12,4 +12,5 @@ import java.util.List;
 @Repository
 public interface AngajatiRepository extends JpaRepository<Angajati, Integer>{
     Angajati findById(int id);
+    List<Angajati> findAll();
 }

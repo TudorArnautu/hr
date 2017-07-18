@@ -43,6 +43,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li><a href="/manager/raport">Manager raport</a></li>
+                <li><a href="/employee/list">Angajati</a></li>
                 <li>
                     <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Angajat <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="demo" class="collapse">

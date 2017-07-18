@@ -162,5 +162,10 @@ public class Employee {
         return programareCursuriService.findAll();
     }
 
+    @RequestMapping("/employee/list")
+    public String list(Model model) {
+        model.addAttribute("angajati", angajatiService.findAll());
 
+        return "employee/list";
+    }
 }
